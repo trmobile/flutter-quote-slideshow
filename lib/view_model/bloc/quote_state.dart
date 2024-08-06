@@ -20,6 +20,15 @@ class QuoteLoaded extends QuoteState {
   List<Object> get props => [quote];
 }
 
+class FavQuoteLoaded extends QuoteState {
+  final List<Quote> favQuotes;
+
+  const FavQuoteLoaded(this.favQuotes);
+
+  @override
+  List<Object> get props => [favQuotes];
+}
+
 class QuoteError extends QuoteState {
   final String message;
 

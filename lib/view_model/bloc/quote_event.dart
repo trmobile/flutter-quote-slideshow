@@ -8,3 +8,5 @@ abstract class QuoteEvent extends Equatable {
 }
 
 class FetchQuotes extends QuoteEvent {}
+
+class FetchFavQuotes extends QuoteEvent {}
